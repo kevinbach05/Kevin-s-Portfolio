@@ -21,3 +21,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
+// Shrinking Header on Scroll
+window.onscroll = function() {
+    var header = document.querySelector("header");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+};

@@ -345,3 +345,14 @@ h2 {
         width: 90%;
     }
 }
+/* Shrinking header when scrolling */
+header.shrink {
+    padding: 5px 0; /* Reduced padding when the header shrinks */
+    background-color: #222; /* Darker background color when shrunk */
+    transition: padding 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+header h1 {
+    font-size: 18px; /* Reduced font size for the logo/title */
+    transition: font-size 0.3s ease; /* Smooth transition */
+}
